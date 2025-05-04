@@ -1,0 +1,180 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "content",
+						"type": "string"
+					}
+				],
+				"name": "TodoAdded",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_content",
+						"type": "string"
+					}
+				],
+				"name": "addTodo",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					}
+				],
+				"name": "getTodo",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "content",
+								"type": "string"
+							},
+							{
+								"internalType": "enum TodoList.Status",
+								"name": "status",
+								"type": "uint8"
+							}
+						],
+						"internalType": "struct TodoList.Todo",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "todoIds",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "todos",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "content",
+						"type": "string"
+					},
+					{
+						"internalType": "enum TodoList.Status",
+						"name": "status",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum TodoList.Status",
+						"name": "_status",
+						"type": "uint8"
+					}
+				],
+				"name": "updateStatus",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"ToDo.sol": "TodoList"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"ToDo.sol": {
+			"keccak256": "0x35f477dc4178ad70f7f862183cabb12e6d5e297c6d1acf62ad621517afa66c15",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://426d49c9406e9f9d0111d95de04dc21a2471a357e69d7834d6c3e6734a992466",
+				"dweb:/ipfs/QmSbdMN2MLq1abnDqDnUGkF8qa7eBq6fBaheMLjRhx1Fco"
+			]
+		}
+	},
+	"version": 1
+}
